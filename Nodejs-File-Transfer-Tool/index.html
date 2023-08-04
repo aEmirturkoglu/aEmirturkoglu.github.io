@@ -7,6 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nodejs-File-Transfer-Tool</title>
     <style>
+
+        
+        body {
+            text-align: center;
+            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+        }
+
+        input {
+            transition: scale 0.25s;
+            align-self: center;
+        }
+
+        input:hover {
+            scale: 1.01;
+        }
+
+        button {
+            border-radius: 12px;
+            border: 2px solid gray;
+            transition: scale 0.25s;
+            align-self: center;
+        }
+
+        button:hover {
+            scale: 1.1;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1.5rem;
@@ -29,11 +60,14 @@
 </head>
 
 <body>
-    <h1>Nodejs-File-Transfer-Tool</h1>
+    <div id="stylediv" style="border: 2px solid white; border-radius: 50px; padding: 20px;">
+    <h1 style="margin-top: 10px; ">Nodejs-File-Transfer-Tool</h1>
     <form id="uploadForm">
-        <input type="file" id="myFiles" accept="image/*" multiple />
-        <button>Submit</button>
+        <input type="file" id="myFiles" accept="image/*" multiple style="border-radius: 10px;
+        border: 8px solid white; "/>
+        <button style="cursor: pointer; margin-bottom: 16px;">Submit</button>
     </form>
+    </div>
     <h2></h2>
     <h3></h3>
     <script>
